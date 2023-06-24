@@ -2,7 +2,7 @@
 
 import { useCallback, useMemo } from 'react';
 
-import { Listing, Reservation } from '@prisma/client';
+import { Reservation } from '@prisma/client';
 import { useRouter } from 'next/navigation';
 
 import { SafeListing, SafeUser } from '@/app/types';
@@ -10,7 +10,6 @@ import useCountries from '@/app/hooks/useCountries';
 import { format } from 'date-fns';
 import Image from 'next/image';
 import HeartButton from '../HeartButton';
-import { divIcon } from 'leaflet';
 import Button from '../Button';
 
 interface ListingCardProps {
