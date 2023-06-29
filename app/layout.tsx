@@ -5,7 +5,7 @@ import ClientOnly from './components/ClientOnly';
 import RegisterModal from './components/modals/RegisterModal';
 import LoginModal from './components/modals/LoginModal';
 import ToasterProvider from './providers/ToasterProvider';
-import getCurrentUser from './actions/getCurrentUsers';
+import getCurrentUser from './actions/getCurrentUser';
 import RentModal from './components/modals/RentModal';
 
 export const metadata = {

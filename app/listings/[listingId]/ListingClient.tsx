@@ -3,9 +3,8 @@
 import { differenceInCalendarDays, eachDayOfInterval } from 'date-fns';
 import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { Reservation } from '@prisma/client';
 
-import { SafeListing, SafeUser } from '@/app/types';
+import { SafeListing, SafeReservation, SafeUser } from '@/app/types';
 import { categories } from '@/app/components/navbar/Categories';
 import Container from '@/app/components/Container';
 import ListingHead from '@/app/components/listings/ListingHead';
@@ -14,6 +13,7 @@ import useLoginModal from '@/app/hooks/useLoginModal';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import ListingReservation from '@/app/components/listings/ListingReservation';
+import { Range } from 'react-date-range';
 
 const initialDateRange = {
   startDate: new Date(),
@@ -22,7 +22,7 @@ const initialDateRange = {
 };
 
 interface ListingClientProps {
-  reservations?: Reservation[];
+  reservations?: SafeReservation[];
   listing: SafeListing & { user: SafeUser };
   currentUser?: SafeUser | null;
 }
@@ -35,7 +35,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
   const loginModal = useLoginModal();
   const router = useRouter();
 
-  const disableDates = useMemo(() => {
+  const disabledDates = useMemo(() => {
     let dates: Date[] = [];
 
     reservations.forEach((reservation) => {
@@ -52,7 +52,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
 
   const [isLoading, setIsLoading] = useState(false);
   const [totalPrice, setTotalPrice] = useState(listing.price);
-  const [dateRange, setDateRange] = useState(initialDateRange);
+  const [dateRange, setDateRange] = useState<Range>(initialDateRange);
 
   const onCreateReservation = useCallback(() => {
     if (!currentUser) {
@@ -132,7 +132,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
                 dateRange={dateRange}
                 onSubmit={onCreateReservation}
                 disabled={isLoading}
-                disabledDate={disabledDates}
+                disabledDates={disabledDates}
               />
             </div>
           </div>
