@@ -1,21 +1,24 @@
 'use client';
 
+import dynamic from 'next/dynamic';
+import { IconType } from 'react-icons';
+
 import useCountries from '@/app/hooks/useCountries';
 import { SafeUser } from '@/app/types';
-import { IconType } from 'react-icons';
+
 import Avatar from '../Avatar';
 import ListingCategory from './ListingCategory';
-import dynamic from 'next/dynamic';
 
 const Map = dynamic(() => import('../Map'), { ssr: false });
 
+// prettier-ignore
 interface ListingInfoProps {
   user: SafeUser;
   description: string;
   guestCount: number;
   roomCount: number;
   bathroomCount: number;
-  category: { icon: IconType; label: string; description: string } | undefined;
+  category: { icon: IconType, label: string, description: string } | undefined;
   locationValue: string;
 }
 
