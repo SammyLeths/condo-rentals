@@ -10,8 +10,8 @@ import RentModal from './components/modals/RentModal';
 import SearchModal from './components/modals/SearchModal';
 
 export const metadata = {
-  title: 'Airbnb',
-  description: 'Airbnb clone',
+  title: 'Condo Rentals',
+  description: 'Condo Rentals Real Estate Listings',
 };
 
 const font = Nunito({
