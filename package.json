@@ -36,6 +36,7 @@
     "react-select": "^5.7.3",
     "react-spinners": "^0.13.8",
     "swr": "^2.2.0",
+    "tw-elements-react": "^1.0.0-alpha1",
     "typescript": "5.0.4",
     "world-countries": "^4.0.0",
     "zustand": "^4.3.8"
