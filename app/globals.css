@@ -8,6 +8,11 @@ body,
   height: 100%;
 }
 
+.custom a {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .leaflet-bottom,
 .leaflet-control,
 .leaflet-pane,

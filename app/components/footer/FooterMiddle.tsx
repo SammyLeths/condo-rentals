@@ -43,9 +43,12 @@ const footerNav = [
 const FooterMiddle = () => {
   return (
     <Container>
-      <div className='flex items-center justify-between py-10 border-b border-gray-300'>
+      <div className='flex flex-col lg:flex-row justify-items-start gap-6 lg:gap-0 py-10 border-b-0 lg:border-b border-gray-300'>
         {footerNav.map((nav) => (
-          <ul key={nav.id} className='space-y-3 flex-1'>
+          <ul
+            key={nav.id}
+            className='space-y-3 flex-1 border-b lg:border-b-0 pb-7 lg:pb-0 border-gray-300'
+          >
             <li className='font-bold'>{nav.name}</li>
             {nav.links.map((link) => (
               <li key={link.name}>
