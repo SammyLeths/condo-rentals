@@ -1,3 +1,38 @@
+<h1>Condo Rentals</h1>
+
+Condo Rentals is a real estate listing marketplace for short let and long term homestay experiences inspired by Airbnb.
+
+Condo Rentals projects a community built on a sharing economy. It is an online platform that allows property owners to list their place as holiday accommodation and allows travellers to find a place to stay while they are away from home.
+
+On the website, homeowners can create a listing for their property and that listing will include a written description, photos and a list of amenities, as well as information about the local area.
+
+Travellers can use filters to search for holiday accommodation that’s right for them – such as the number of bedrooms, location and price.
+
+Condo Rentals is based on trust. It establishes this trust by asking both guests and hosts to review each other. This creates a rating system for all listings and ensures that, in most cases, everyone has a good experience.
+
+Condo Rentals is a modern responsive simple property listing platform suitable for use by real estate agencies and independent realtors. With this project, you can easily create a property listing website. Some of the features built into this project include:
+
+<ul>
+  <li>Property listing</li>
+  <li>Advanced search and filters</li>
+  <li>Categorization</li>
+  <li>Advanced calendar booking</li>
+  <li>Property reservation</li>
+  <li>User authentication</li>
+  <li>Social login</li>
+  <li>Interactive modals</li>
+  <li>Multi step smart forms</li>
+  <li>Cloudinary multi-file upload</li>
+</ul>
+
+This project was developed using React, NextJS, TypeScript, Tailwind CSS, HTML5, Prisma, MongoDB, Leaflet, Cloudinary, Axios, NPM, Autoprefixer and PostCSS.
+
+<h2>Screenshots</h2>
+
+
+
+<hr />
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
