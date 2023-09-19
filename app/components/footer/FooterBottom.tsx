@@ -24,9 +24,18 @@ const FooterBottom = () => {
             <div className="cursor-pointer">English (US)</div>
             <div className="cursor-pointer">$ USD</div>
             <ul className="hidden md:flex gap-3">
-              <AiFillFacebook size={25} className="cursor-pointer" />
-              <AiFillTwitterSquare size={25} className="cursor-pointer" />
-              <FaInstagramSquare size={25} className="cursor-pointer" />
+              <AiFillFacebook
+                size={25}
+                className="cursor-pointer hover:text-blue-600"
+              />
+              <AiFillTwitterSquare
+                size={25}
+                className="cursor-pointer hover:text-blue-600"
+              />
+              <FaInstagramSquare
+                size={25}
+                className="cursor-pointer hover:text-blue-600"
+              />
             </ul>
           </div>
         </div>
