@@ -29,7 +29,7 @@ This project was developed using React, NextJS, TypeScript, Tailwind CSS, Prisma
 
 <h2>Screenshots</h2>
 
-![Artboard 1cd-mock-2](https://github.com/SammyLeths/next-realestate/assets/64320618/bc8f8826-f291-4753-a3d5-665cb202917c)
+![proj10-condo-rentals](https://github.com/SammyLeths/condo-rentals/assets/64320618/0c100412-9bf6-4714-8e8a-905ccd6ed267)
 
 <h2>Links</h2>
 
